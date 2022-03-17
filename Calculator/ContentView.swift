@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack(alignment: .center, spacing: 10) {
+            Button("AC", action: {})
+                .background(Color.gray)
+                .foregroundColor(Color.white)
+            Button("+/-", action: {})
+                .background(Color.gray)
+                .foregroundColor(Color.white)
+            Button("%", action: {})
+                .background(Color.gray)
+                .foregroundColor(Color.white)
+            Button("/", action: {})
+                .background(Color.gray)
+                .foregroundColor(Color.white)
+        }
     }
 }
 
